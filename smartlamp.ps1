@@ -4,8 +4,6 @@ $tp_link_password = ""
 
 function get_token () {
     Write-Host "[**]Getting token from server"
-    #*Authentication*
-    #POST Data
     $get_token_params = @{
         method="login"
         params = @{
@@ -24,7 +22,6 @@ function get_token () {
 }
 
 function ignore_ssl (){
-    #*IGNORE SSL ERRORS*
     add-type @"
     using System.Net;
     using System.Security.Cryptography.X509Certificates;
