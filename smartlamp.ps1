@@ -59,11 +59,11 @@ function get_version($tp_link_thing, $tp_auth_token){
     return $version
 }
 function main($tp_username, $tp_password){
+    clear-host
     ignore_ssl
     $tp_link_token = get_token $tp_username $tp_password
     $tp_link_thing = get_things $tp_link_token
     Write-Host "[**] Press 1 to turn on`n[**] Press 2 to turn off`n[**] Press 3 to exit"
-    Write-Host "[**] Please choose an option"
     while ($option -ne "D3"){
         $option = [Console]::ReadKey($true).key
         if ($option -eq "D1"){
