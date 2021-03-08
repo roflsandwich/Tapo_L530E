@@ -3,8 +3,8 @@ Powershell script to turn on/off tp-link L530E smart lamp
 
 # Usage:
 
-*Update the credentials on the script
+* Update the credentials on the script 
 
-*Open powershell and navigate to the script folder
+* Open powershell and navigate to the script folder
 
-*./smartlamp.ps1
+* ./smartlamp.ps1
